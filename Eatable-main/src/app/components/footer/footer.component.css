@@ -1,0 +1,16 @@
+.footer{
+    padding: 3px;
+    position: relative;
+}
+.col{
+    font-size: 20px;
+    text-align: center;
+}
+a{
+    color: rgb(146, 146, 146);;
+}
+
+a:hover{
+    color: #fa4a0c;
+    text-decoration: none;
+}
