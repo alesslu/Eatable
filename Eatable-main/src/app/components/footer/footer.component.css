@@ -7,10 +7,14 @@
     text-align: center;
 }
 a{
-    color: rgb(146, 146, 146);;
+    color: #afafb1;
 }
 
 a:hover{
     color: #fa4a0c;
     text-decoration: none;
+}
+
+.active{
+    color: #fa4a0c;
 }
