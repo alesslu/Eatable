@@ -1,5 +1,5 @@
 .pantalla-app{
-    width: 355px;
+    width: 320px;
     height: 650px;
     background-color: #f6f6f9;
     border-radius: 15px;
@@ -13,6 +13,7 @@
 }
 .contenido{
     height: 93%;
+    overflow:auto
 }
 .cont-footer{
     height: 2%;

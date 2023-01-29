@@ -8,6 +8,15 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HistoryComponent } from './pages/history/history.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { PlatosInterceptorService } from './interceptors/platos-interceptor.service';
+
+import { PlatoCardComponent } from './components/plato-card/plato-card.component';
+import { CarritoComponent } from './pages/carrito/carrito.component';
+import { DescripcionPlatoComponent } from './pages/descripcion-plato/descripcion-plato.component';
+
 
 @NgModule({
   declarations: [
@@ -15,13 +24,25 @@ import { ProfileComponent } from './pages/profile/profile.component';
     FooterComponent,
     HomeComponent,
     HistoryComponent,
-    ProfileComponent
+    ProfileComponent,
+    ProductsComponent,
+    PlatoCardComponent,
+    CarritoComponent,
+    DescripcionPlatoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: PlatosInterceptorService,
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

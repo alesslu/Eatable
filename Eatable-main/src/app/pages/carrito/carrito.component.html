@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="topbar">
+      <i class="fa-solid fa-angle-left icon-back"></i>
+      <p>Cart</p>
+    </div>
+    <article class="dish-card" *ngFor="let plato of ListaCarrito">
+      <img [src]="plato.picture_url" alt="" class="dish-image" />
+      <div class="dish-info">
+        <h2 class="dish-title">{{ plato.name }}</h2>
+        <p class="dish-price">
+          {{ (plato.price || 0) * (plato.quantity || 0) | currency }}
+        </p>
+      </div>
+      <div class="counter">
+        <span (click)="reduceQuantity(plato)">&minus;</span>
+        {{ plato.quantity }}
+        <span (click)="incrementQuantity(plato)">&plus;</span>
+      </div>
+    </article>
+    <div class="total">
+      <p class="total-description">Total</p>
+      <p class="total-value">{{ total | currency }}</p>
+    </div>
+    <button class="btn-cart">Checkout</button>
+  </div>
+  <app-footer></app-footer>
+  

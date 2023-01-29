@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="topbar">
+      <i class="fa-solid fa-angle-left icon-back"></i>
+    </div>
+    <img class="dish-image" [src]="PlatoActual.picture_url" alt="" />
+    <h1 class="title">{{ PlatoActual.name }}</h1>
+    <p class="price">{{ PlatoActual.price | currency }}</p>
+    <h2 class="subtitle">Description</h2>
+    <p class="description">
+      {{ PlatoActual.description }}
+    </p>
+    <button class="btn-cart" [disabled]="AgreadoAlCarrito" (click)="onClick()">
+      {{ cartLabel }}
+    </button>
+  </div>
