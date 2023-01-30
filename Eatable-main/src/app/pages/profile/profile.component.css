@@ -1,0 +1,164 @@
+.container-profile{
+    padding: 3em;
+
+}
+
+p{
+    font-weight: 500;
+
+}
+
+.titulo_profile{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+
+
+h6{
+    font-weight: 700;
+    text-align: left;
+}
+
+
+
+.conteiner_datos{
+    background-color: white;
+    height: 13em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.conteiner_datos2{
+    background-color: white;
+    height: 3em;
+    border-radius: 1em;
+}
+
+.history_profile{
+    font-weight: 700;
+     align-items: center;
+     text-align: center;
+     padding: 1.2em;
+     font-size: 0.8em;
+
+}
+
+
+
+.form-group{
+    margin-top: 0.5em;
+    border-bottom: 0.0001em solid rgb(156, 156, 156);
+}
+
+.detalles_profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detalles_profile2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5em 0 0.5em;
+    align-items: center
+}
+
+.change_profile{
+    color: #FA4A0C;
+    font-weight: 500;
+}
+
+.label_profile{
+    font-size: 0.8em;
+    color: #818181;
+    margin-top: 1em;
+}
+
+.label_profile_name{
+    font-size: 0.8em;
+    color: #818181;
+}
+
+
+
+.btn-ingreso{
+    text-align: center;
+
+}
+
+.btn-register{
+    margin-top: 6em;
+    background-color: #FA4A0C;
+    border-style: none;
+    border-radius: 1.4em;
+    padding: 1em;
+    width: 15em;
+    color: white;
+
+}
+
+
+/* Estilos del update */
+
+.container-profile-update1{
+    padding: 0em 3em 0 3em;
+
+}
+
+.titulo_profile-update{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    padding-top: 3em;
+}
+
+.conteiner_datos-update{
+    background-color: white;
+    padding: 0.1em 1em 2em 1em;
+    border-radius: 1em;
+    height: 14em;
+
+}
+
+.form-control-update{
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #3b3b3b;
+    margin-top: -1em;
+    border-style: none;
+    background:none; 
+    border:none; 
+    outline:0;
+}
+
+.form-group-update{
+    border-bottom: 0.0001em solid rgb(156, 156, 156);
+
+}
+
+
+
+.label_profile_update{
+    font-size: 0.7em;
+    color: #818181;
+}
+
+
+
+.btn-profile-update{
+    text-align:center;
+    margin-top: 3em;
+}
+
+.btn-profile2-update{
+    margin-top: 6em;
+    background-color: #FA4A0C;
+    border-style: none;
+    border-radius: 1.2em;
+    padding: 1em;
+    width: 15em;
+    color: white;
+
+}

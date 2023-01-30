@@ -1,0 +1,65 @@
+<div class="cabezera">
+    <a href="javascript:history.back()"><i class="fa-solid fa-chevron-left"></i></a>
+    <h6 class="text-center">Cart</h6>
+</div>
+
+<div>
+<ul>
+    <li class="card">
+        <img src="https://as1.ftcdn.net/v2/jpg/02/38/10/18/1000_F_238101806_kBAHf5XHZr1bGQbFNKX55bvlJYiz4HHe.jpg" alt="Plato" class="plato">
+        <p class="title">Veggie tomato mix<p>
+        <p class="amount">$75.45</p>
+        <div class="aumento">
+            <button class="menos">-</button>
+            <div class="quantity">5</div>
+            <button class="mas">+</button>
+        </div>  
+    </li>
+
+    <li class="card">
+        <img src="https://as1.ftcdn.net/v2/jpg/02/38/10/18/1000_F_238101806_kBAHf5XHZr1bGQbFNKX55bvlJYiz4HHe.jpg" alt="Plato" class="plato">
+        <p class="title">Veggie tomato mix<p>
+        <p class="amount">$15.45</p>
+        <div class="aumento">
+            <button class="menos">-</button>
+            <div class="quantity">1</div>
+            <button class="mas">+</button>
+        </div>
+        
+    </li>
+
+</ul>
+</div>
+<div class="total">
+    <p>Total</p> 
+     <span>$97.90</span>
+     <button>Checkout</button>
+ </div>
+
+<!-- 
+ <div class="container">
+    <div class="topbar">
+      <i class="fa-solid fa-angle-left icon-back"></i>
+      <p>Cart</p>
+    </div>
+    <article class="dish-card" *ngFor="let dish of cartList">
+      <img [src]="dish.picture_url" alt="" class="dish-image" />
+      <div class="dish-info">
+        <h2 class="dish-title">{{ dish.name }}</h2>
+        <p class="dish-price">
+          {{ (dish.price || 0) * (dish.quantity || 0) | currency }}
+        </p>
+      </div>
+      <div class="counter">
+        <span (click)="reduceQuantity(dish)">&minus;</span>
+        {{ dish.quantity }}
+        <span (click)="incrementQuantity(dish)">&plus;</span>
+      </div>
+    </article>
+    <div class="total">
+      <p class="total-description">Total</p>
+      <p class="total-value">{{ total | currency }}</p>
+    </div>
+    <button class="btn-cart">Checkout</button>
+  </div>
+  <app-navbar></app-navbar> -->

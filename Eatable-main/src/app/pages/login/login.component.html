@@ -1,6 +1,39 @@
 <div class="pantalla-app">
     <div class="contenido">
-        <button type="button" class="btn btn-warning">Warning</button>
+        <div class="container-superior">
+                <img src="assets/Eatable.svg" alt="logo" class="logo">
+                <br>
+                <img src="assets/Food for Everyone.png" alt="slogan">
+
+                <div class="navbar-mini">
+                    <a routerLink="/login"><button class="btn-entrar">Login</button></a>
+                    <a routerLink="/register"><button class="btn-entrar">Sign-up</button></a>
+                </div>
+        </div>
+
+
+        <div class="container-inferior">
+            <form [formGroup]="loginForm">
+                    <div class="mb-4">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control form-login" id="email" name="email" required formControlName="email">
+                            <div *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.errors?.['required']"
+                            class="alert alert-danger">This field is required.
+                    </div>
+
+
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required formControlName="password">
+                        <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.errors?.['required']"
+                        class="alert alert-danger">This field is required.
+                    </div>
+                
+
+            <div class="btn-ingreso">
+                <button class="btn-register" type="submit" [disabled]="loginForm.invalid" (click)="onSubmit()">Login</button>
+            </div>
+            
+        </div>
         
     </div>
-  </div>
