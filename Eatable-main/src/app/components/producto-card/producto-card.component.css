@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/*FONDO BLANCO*/
+.card-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 160px;
+  width: 120px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.img__cont {
+  width: 60px;
+  height: 50px;
+  display: grid;
+  flex-direction: column;
+  place-content: center;
+
+}
+
+.img__cont img {
+  margin-top: -30px;
+  position: static;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+
+}
+
+.text__name {
+  font-size: 0.9rem;
+  color: black;
+  font-weight: bold;
+}
+
+.text__pill {
+  font-size: 1.0rem;
+  font-weight: bold;
+  color: #fa4a0c;
+}

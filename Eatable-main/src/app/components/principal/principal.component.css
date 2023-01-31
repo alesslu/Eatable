@@ -1,5 +1,9 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .pantalla-app{
-    width: 355px;
+    width: 320px;
     height: 650px;
     background-color: #f6f6f9;
     border-radius: 15px;
@@ -13,7 +17,40 @@
 }
 .contenido{
     height: 93%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .cont-footer{
     height: 2%;
 }
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.contenido::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  
+  .contenido::-webkit-scrollbar:vertical {
+    width: 10px;
+  }
+  
+  .contenido::-webkit-scrollbar-button:increment,
+  .contenido::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  .contenido::-webkit-scrollbar:horizontal {
+    height: 10px;
+  }
+  
+  .contenido::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+  }
+  
+  .contenido::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  

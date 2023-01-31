@@ -1,0 +1,27 @@
+<div class="pantalla-app">
+  <div class="contenido">
+    <div class="checkout">
+      <a [routerLink]="['/principal/home/cart']"><i class="fa-solid fa-chevron-left"></i></a>
+      <h6 class="text-center">Checkout</h6>
+    </div>
+    <div class="delivery">
+      <h4 class="titulo"> Delivery</h4>
+      <p class="address"> Address details</p>
+      <p class="cambiar" role="button" (click)="updateAddress()"> change</p>
+      <div class="direccion">
+        <p class="name">{{profile.name}}</p>
+        <p> {{profile.address}}</p>
+        <p>{{profile.phone}}</p>
+      </div>
+
+    </div>
+    <div class="total">
+      <p>Total</p>
+      <span>{{ total | currency }}</span>
+      <button (click)="Ordenar()">Complete Order</button>
+    </div>
+  </div>
+  <div class="cont-footer">
+    <app-footer></app-footer>
+  </div>
+</div>

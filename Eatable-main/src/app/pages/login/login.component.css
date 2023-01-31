@@ -1,5 +1,9 @@
-.pantalla-app{
-    width: 355px;
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.pantalla-app {
+    width: 320px;
     height: 650px;
     background-color: #f6f6f9;
     border-radius: 15px;
@@ -9,8 +13,97 @@
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    box-shadow: 5px 5px 5px rgb(95, 95, 95);
 }
-.contenido{
+
+.contenido {
     height: 100%;
+}
+
+.container-superior {
+    height: 18em;
+    background-color: white;
+    text-align: center;
+    padding-top: 6em;
+    border-radius: 1.2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+
+    box-shadow: 0.5px 2px 12px 0 #0000000c;
+}
+
+.logo {
+    width: 40%;
+}
+
+.navbar-mini {
+    margin-top: 5.6em;
+}
+
+.btn-entrar {
+    border-style: none;
+    background-color: white;
+    font-weight: 700;
+    padding: 0 3em 0 3em;
+}
+
+.btn-entrar:hover {
+    border-bottom: 3px solid #FA4A0C;
+    border-bottom-width: 0.2em;
+}
+
+/* Formulario */
+
+.container-inferior {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.form-control {
+    margin-top: -0.5em;
+    border-style: none;
+    border-bottom: 0.05em solid #818181;
+    background-color: #f6f6f9;
+    border-radius: 0em;
+    border-bottom-width: 0.05em;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+.form-control:active {
+    background-color: #f6f6f9;
+}
+
+.form-label {
+    font-size: 0.8em;
+    color: #818181;
+}
+
+
+.btn-ingreso {
+    text-align: center;
+
+}
+
+.btn-login {
+    margin-top: 4em;
+    background-color: #FA4A0C;
+    border-style: none;
+    border-radius: 1.2em;
+    padding: 1em;
+    width: 15em;
+    color: white;
+
+}
+
+.alert-danger {
+    height: 2em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+.active {
+    color: #fa4a0c;
 }

@@ -8,8 +8,19 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HistoryComponent } from './pages/history/history.component';
 import { ProfileComponent } from './pages/profile/profile.component';
-import { PrincipalComponent } from './components/principal/principal.component';
+import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './pages/login/login.component';
+import { PrincipalComponent } from './components/principal/principal.component';
+import { httpInterceptorProviders } from './interceptors';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CartComponent } from './pages/cart/cart/cart.component';
+import { CheckoutComponent } from './pages/cart/checkout/checkout.component';
+import { ProductComponent } from './pages/product/product.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { ProductoCardComponent } from './components/producto-card/producto-card.component';
+import { UpdateprofileComponent } from './pages/updateprofile/updateprofile.component';
+import { CommonModule } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -18,14 +29,24 @@ import { LoginComponent } from './pages/login/login.component';
     HomeComponent,
     HistoryComponent,
     ProfileComponent,
+    LoginComponent,
     PrincipalComponent,
-    LoginComponent
+    CartComponent,
+    CheckoutComponent,
+    ProductComponent,
+    RegisterComponent,
+    ProductoCardComponent,
+    UpdateprofileComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

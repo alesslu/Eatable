@@ -1,0 +1,107 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.pantalla-app {
+    width: 320px;
+    height: 650px;
+    background-color: #f6f6f9;
+    border-radius: 15px;
+    align-items: center;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 5px rgb(95, 95, 95);
+}
+
+.contenido {
+    height: 93%;
+    overflow: auto;
+}
+
+.cont-footer {
+    height: 2%;
+}
+
+/* Estilos del update */
+
+.profile-update1 {
+    padding: 1.5em;
+    height: 90%;
+}
+
+.titulo_profile-update {
+    display: flex;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.checkout a {
+    position: absolute;
+    top: 18px;
+    margin-left: 20px;
+}
+
+.checkout a:link {
+    color: #343a40;
+}
+
+.text-center {
+    padding: 20px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 80px;
+}
+
+p {
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.conteiner_datos-update {
+    background-color: white;
+    padding: 0.1em 1em 2em 1em;
+    border-radius: 1em;
+    height: 14em;
+
+}
+
+.form-control-update {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #3b3b3b;
+    margin-top: -1em;
+    border-style: none;
+    background: none;
+    border: none;
+    outline: 0;
+}
+
+.form-group-update {
+    border-bottom: 0.0001em solid rgb(156, 156, 156);
+
+}
+
+.label_profile_update {
+    font-size: 0.7em;
+    color: #818181;
+}
+
+.btn-profile-update {
+    text-align: center;
+    margin-top: 2.8em;
+}
+
+.btn-profile2-update {
+    margin-top: 7em;
+    background-color: #FA4A0C;
+    border-style: none;
+    border-radius: 1.2em;
+    padding: 1em;
+    width: 15em;
+    color: white;
+
+}

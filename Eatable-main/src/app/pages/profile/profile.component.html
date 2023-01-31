@@ -1,1 +1,43 @@
-<p>profile works!</p>
+<div class="profile">
+
+    <div class="titulo_profile">
+        <div class="checkout">
+            <a [routerLink]="['/principal/home']"><i class="fa-solid fa-chevron-left"></i></a>
+            <h6 class="text-center">My profile</h6>
+        </div>
+    </div>
+
+    <div class="detalles_profile">
+        <div class="history_profile">Personal details</div>
+        <div class="change_profile" role="button" (click)="change()">change</div>
+    </div>
+
+    <div class="conteiner_datos">
+        <form class="datos_profile">
+            <h6 class="nombre_user">{{profile.name}}</h6>
+            <div class="form-group">
+                <label for="" class="label_profile">{{profile.email}}</label>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="label_profile">{{profile.phone}}</label>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="label_profile">{{profile.address}}</label>
+            </div>
+        </form>
+    </div>
+    <br>
+
+    <div class="conteiner_datos2" role="button" href="">
+        <div class="detalles_profile2" [routerLink]="['/principal/history']">
+            <div class="history_profile">History</div>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <div class="btn-ingreso">
+        <button class="btn-register" (click)="logOut()">Log out</button>
+    </div>
+</div>

@@ -1,0 +1,104 @@
+.card-history {
+  width: 90%;
+  margin: auto;
+}
+
+.title-history {
+  margin: auto;
+  width: 90%;
+  font-size: 18px;
+
+}
+
+.pantalla {
+  padding: 5px;
+  margin-top: 20px;
+}
+
+a:hover {
+  color: #fa4a0c;
+  text-decoration: none;
+}
+
+a {
+  color: #afafb1;
+}
+
+.titulo-app {
+  text-align: left;
+
+}
+
+.no-history {
+  text-align: center;
+  color: #2c2c2c;
+  align-items: center;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+summary {
+  text-align: right;
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li span {
+  position: relative;
+  left: 30%;
+  padding: 20px;
+}
+
+
+.card-title {
+  font-size: 15px;
+}
+
+.card-subtitle {
+  font-size: 12px;
+}
+
+.card {
+  border: none;
+  margin-top: 5px;
+  border-radius: 18px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: initial;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  border-color: #fff;
+  box-shadow: none;
+}
+
+.detalles-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: #2c2c2c;
+}
+
+.precio-product {
+  text-align: left;
+  float: right;
+}
+
+
+.toggle-icon {
+  display: block;
+  margin-left: auto;
+  font-size: 1.25rem;
+  color: #fa4a0c;
+}

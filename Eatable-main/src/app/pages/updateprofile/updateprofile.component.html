@@ -1,0 +1,54 @@
+<div class="pantalla-app">
+    <div class="contenido">
+        <div class="profile-update1">
+
+            <div class="titulo_profile-update">
+                <div class="checkout">
+                    <a href="javascript:history.back()"><i class="fa-solid fa-chevron-left"></i></a>
+                    <h6 class="text-center">My profile</h6>
+                </div>
+            </div>
+
+            <div class="profile-update">
+
+                <p>Update personal details</p>
+
+                <div class="conteiner_datos-update">
+                    <form class="datos_profile-update">
+
+                        <div class="form-group-update">
+                            <label for="exampleInputName1" class="label_profile_update">Name</label>
+                            <br>
+                            <input type="text" class="form-control-update" name="name" [(ngModel)]="profile.name">
+                        </div>
+
+                        <div class="form-group-update">
+                            <label for="exampleInputName1" class="label_profile_update">Email</label>
+                            <br>
+                            <input type="email" class="form-control-update" name="email" [(ngModel)]="profile.email">
+                        </div>
+
+                        <div class="form-group-update">
+                            <label for="exampleInputName1" class="label_profile_update">Phone</label>
+                            <br>
+                            <input type="text" class="form-control-update" name="phone" [(ngModel)]="profile.phone">
+                        </div>
+
+                        <div class="form-group-update">
+                            <label for="exampleInputName1" class="label_profile_update">Address</label>
+                            <br>
+                            <input type="text" class="form-control-update" name="address" [(ngModel)]="profile.address">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="btn-profile-update">
+                    <button class="btn-profile2-update" type="submit" (click)="updateUser()">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont-footer">
+        <app-footer></app-footer>
+    </div>
+</div>

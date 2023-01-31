@@ -1,0 +1,9 @@
+<div class="card-cont shadow">
+    <div class="img__cont shadow">
+      <img [src]="imgProduct" alt="product"/>
+    </div>
+    <div class="card__text">
+      <p class="text__name">{{ productName | titlecase }}</p>
+      <p class="text__pill">{{ productPill | currency }}</p>
+    </div>
+  </div>

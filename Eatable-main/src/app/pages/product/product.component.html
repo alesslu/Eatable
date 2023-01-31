@@ -1,0 +1,20 @@
+<div class="pantalla-app">
+  <div class="contenido">
+    <div class="product">
+      <div class="topbar">
+        <a href="javascript:history.back()"><i class="fa-solid fa-angle-left icon-back"></i></a>
+      </div>
+      <img class="dish-image" [src]="ProductActual.picture_url" alt="" />
+      <h1 class="title">{{ ProductActual.name }}</h1>
+      <p class="price">{{ ProductActual.price | currency }}</p>
+      <h2 class="subtitle">Description</h2>
+      <p class="description">{{ ProductActual.description }}</p>
+      <button class="btn-cart" [disabled]="AgreadoAlCarrito" [style.cursor]="AgreadoAlCarrito ? 'not-allowed' : 'pointer'" (click)="onClick()">
+        {{ cartItem }}
+      </button>
+    </div>
+  </div>
+  <div class="cont-footer">
+    <app-footer></app-footer>
+  </div>
+</div>

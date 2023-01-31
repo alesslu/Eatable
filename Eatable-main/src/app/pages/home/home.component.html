@@ -1,1 +1,38 @@
-<p>home works!</p>
+<br>
+<div class="Buscar">
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"><i class="fa-solid fa-magnifying-glass glass_b"></i></div>
+    <div class="col-sm-7 buscador">
+      <input id="search" type="text" placeholder="Search" [(ngModel)]="search" (input)="onChange()" />
+    </div>
+    <div class="col-sm-1 carrito">
+      <a routerLink="/principal/home/cart">
+        <i class="fa-solid fa-cart-shopping cart_dark"></i>
+      </a>
+    </div>
+    <!-- <div class="col-sm-1"> <p class="cart_number">0</p></div>      -->
+  </div>
+</div>
+
+<div class="contenedor">
+
+  <div class="fixed-cont">
+    <div *ngIf="showNavbar" class="navbar">
+      <ul class="navbar__list">
+        <li *ngFor="let category of categories" (click)="filterByCategory(category)">{{ category }}</li>
+      </ul>
+    </div>
+
+    <div class="no-result" *ngIf="!showNavbar">
+      <p class="no-result__text">Found {{ filteredProducts.length }} result</p>
+    </div>
+  </div>
+
+  <div class="allPlatos">
+    <app-producto-card *ngFor="let product of filteredProducts" [productName]="product.name"
+      [productPill]="product.price" [imgProduct]="product.picture_url"[routerLink]="['/home/producto', product._id]">
+    </app-producto-card>
+
+  </div>
+</div>
