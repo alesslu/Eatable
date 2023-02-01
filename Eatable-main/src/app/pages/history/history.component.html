@@ -1,7 +1,7 @@
 <div class="pantalla">
   <div class="title-history">
     <div class="row">
-      <div class="col-sm-4"><a href="javascript:history.back()"><i class="fa-solid fa-chevron-left"></i></a></div>
+      <div class="col-sm-4"><a [routerLink]="['/principal/home']"><i class="fa-solid fa-chevron-left"></i></a></div>
       <div class="titulo-app col-sm-8"> <b>History</b> </div>
     </div>
   </div>
@@ -11,34 +11,31 @@
     <i class="fa-regular fa-clipboard" style="font-size: 100px; color: #afafb1;"></i>
     <br>
     <p style="font-size: 20px;"> <b>No history yet</b> </p>
-
   </div>
 
   <div class="card-history" *ngIf="userHistory.length!==0">
     <div class="card" style="width: 18rem;" *ngFor="let order of userHistory">
       <div class="card-body">
         <h2 class="accordion-header" id="headingOne">
-
-            <h5 class="card-title">{{order.created_date | date:'EEE, MMM d, y'}}</h5>
-            <div class="card-info">
-              <h6 class="card-subtitle mb-2 text-muted">
-                <div class="row">
-                  <div class="col-sm-7">
-                    {{order.items.length}} items
-                  </div>
-                  <div class="col-sm-5" style="color: #fa4a0c;">
-                    {{order.total | currency}}
-                  </div>
+          <h5 class="card-title">{{order.created_date | date:'EEE, MMM d, y'}}</h5>
+          <div class="card-info">
+            <h6 class="card-subtitle mb-2 text-muted">
+              <div class="row">
+                <div class="col-sm-7">
+                  {{order.items.length}} items
                 </div>
-              </h6>
-            </div>
-
+                <div class="col-sm-5" style="color: #fa4a0c; text-align: right;">
+                  {{order.total | currency}}
+                </div>
+              </div>
+            </h6>
+          </div>
         </h2>
 
         <span *ngIf="!order.show" (click)="onClickToggleButton(order)">
           <i class="toggle-icon fa-solid fa-angle-down cursor-pointer"></i>
         </span>
-        <div *ngIf="order.show">
+        <div *ngIf="order.show" style="margin-top: 10px;">
           <h6 class="detalles-title">Order</h6>
           <h6 class="card-subtitle mb-2 text-muted">
             <ul>

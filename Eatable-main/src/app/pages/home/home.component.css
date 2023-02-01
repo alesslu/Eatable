@@ -103,9 +103,21 @@
   display: block;
   place-content: center;
   padding: 20px;
+  text-align: center;
 }
 
 .no-result__text {
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+.no-product {
+  text-align: center;
+  color: #2c2c2c;
+  align-items: center;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }

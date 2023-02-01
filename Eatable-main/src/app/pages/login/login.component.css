@@ -1,17 +1,8 @@
-<<<<<<< HEAD
 * {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 .pantalla-app {
-=======
-*{
-    font-family: 'Source Sans Pro', sans-serif;
-    
-}
-
-.pantalla-app{
->>>>>>> 945eb7379754c8fa87ea0770f4d15249ac9f8d31
     width: 320px;
     height: 650px;
     background-color: #f6f6f9;
@@ -24,19 +15,11 @@
     transform: translate(-50%, -50%);
 }
 
-<<<<<<< HEAD
 .contenido {
     height: 100%;
 }
 
 .container-superior {
-=======
-.contenido{
-    height: 100%;
-}
-
-.container-superior{
->>>>>>> 945eb7379754c8fa87ea0770f4d15249ac9f8d31
     height: 18em;
     background-color: white;
     text-align: center;
@@ -45,7 +28,6 @@
     border-bottom-left-radius: 2em;
     border-bottom-right-radius: 2em;
 
-<<<<<<< HEAD
     box-shadow: 0.5px 2px 12px 0 #0000000c;
 }
 
@@ -58,52 +40,26 @@
 }
 
 .btn-entrar {
-=======
-    box-shadow: 0.5px 2px 12px 0  #0000000c;
-}
-
-.logo{
-    width: 40%;
-}
-
-.navbar-mini{
-    margin-top: 5.6em;
-}
-
-.btn-entrar{
->>>>>>> 945eb7379754c8fa87ea0770f4d15249ac9f8d31
     border-style: none;
     background-color: white;
     font-weight: 700;
     padding: 0 3em 0 3em;
 }
 
-<<<<<<< HEAD
 .btn-entrar:hover {
-=======
-.btn-entrar:hover{
->>>>>>> 945eb7379754c8fa87ea0770f4d15249ac9f8d31
     border-bottom: 3px solid #FA4A0C;
     border-bottom-width: 0.2em;
 }
 
 /* Formulario */
 
-<<<<<<< HEAD
 .container-inferior {
-=======
-.container-inferior{
->>>>>>> 945eb7379754c8fa87ea0770f4d15249ac9f8d31
     width: 80%;
     margin: 0 auto;
     margin-top: 2em;
 }
 
-<<<<<<< HEAD
 .form-control {
-=======
-.form-control{
->>>>>>> 945eb7379754c8fa87ea0770f4d15249ac9f8d31
     margin-top: -0.5em;
     border-style: none;
     border-bottom: 0.05em solid #818181;
@@ -114,38 +70,22 @@
     font-size: 0.9em;
 }
 
-<<<<<<< HEAD
 .form-control:active {
     background-color: #f6f6f9;
 }
 
 .form-label {
-=======
-.form-control:active{
-    background-color: #f6f6f9;
-}
-
-.form-label{
->>>>>>> 945eb7379754c8fa87ea0770f4d15249ac9f8d31
     font-size: 0.8em;
     color: #818181;
 }
 
 
-<<<<<<< HEAD
 .btn-ingreso {
-=======
-.btn-ingreso{
->>>>>>> 945eb7379754c8fa87ea0770f4d15249ac9f8d31
     text-align: center;
 
 }
 
-<<<<<<< HEAD
 .btn-login {
-=======
-.btn-register{
->>>>>>> 945eb7379754c8fa87ea0770f4d15249ac9f8d31
     margin-top: 4em;
     background-color: #FA4A0C;
     border-style: none;
@@ -156,21 +96,14 @@
 
 }
 
-<<<<<<< HEAD
 .alert-danger {
-=======
-.alert-danger{
->>>>>>> 945eb7379754c8fa87ea0770f4d15249ac9f8d31
     height: 2em;
     margin: 0;
     display: flex;
     align-items: center;
     padding: 0px;
-<<<<<<< HEAD
 }
 
 .active {
     color: #fa4a0c;
-=======
->>>>>>> 945eb7379754c8fa87ea0770f4d15249ac9f8d31
 }

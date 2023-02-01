@@ -19,26 +19,31 @@
                         <div class="form-group-update">
                             <label for="exampleInputName1" class="label_profile_update">Name</label>
                             <br>
-                            <input type="text" class="form-control-update" name="name" [(ngModel)]="profile.name">
+                            <input type="text" class="form-control-update" name="name" [(ngModel)]="profile.name" required #name="ngModel">
                         </div>
+                        <div [hidden]="name.valid || name.pristine" class="alert">This field is required.</div>
 
                         <div class="form-group-update">
                             <label for="exampleInputName1" class="label_profile_update">Email</label>
                             <br>
-                            <input type="email" class="form-control-update" name="email" [(ngModel)]="profile.email">
+                            <input type="email" class="form-control-update" name="email" [(ngModel)]="profile.email" required #email="ngModel">
                         </div>
+                        <div [hidden]="email.valid || email.pristine" class="alert alert-danger">This field is required.</div>
 
                         <div class="form-group-update">
                             <label for="exampleInputName1" class="label_profile_update">Phone</label>
                             <br>
-                            <input type="text" class="form-control-update" name="phone" [(ngModel)]="profile.phone">
+                            <input type="text" class="form-control-update" name="phone" [(ngModel)]="profile.phone" required #phone="ngModel">
                         </div>
+                        <div [hidden]="phone.valid || phone.pristine" class="alert alert-danger">This field is required.</div>
 
                         <div class="form-group-update">
                             <label for="exampleInputName1" class="label_profile_update">Address</label>
                             <br>
-                            <input type="text" class="form-control-update" name="address" [(ngModel)]="profile.address">
+                            <input type="text" class="form-control-update" name="address" [(ngModel)]="profile.address" required #adress="ngModel">
+                            
                         </div>
+                        <div [hidden]="adress.valid || adress.pristine" class="alert alert-danger">This field is required.</div>
                     </form>
                 </div>
 

@@ -11,7 +11,6 @@
         <i class="fa-solid fa-cart-shopping cart_dark"></i>
       </a>
     </div>
-    <!-- <div class="col-sm-1"> <p class="cart_number">0</p></div>      -->
   </div>
 </div>
 
@@ -23,16 +22,22 @@
         <li *ngFor="let category of categories" (click)="filterByCategory(category)">{{ category }}</li>
       </ul>
     </div>
+  </div>
 
+  <div class="no-product" *ngIf="filteredProducts.length==0">
+    <i class="fa-solid fa-magnifying-glass" style="font-size: 100px; color: #afafb1;"></i>
+    <br>
+    <p style="font-size: 20px;"> <b>No products found</b> </p>
+  </div>
+
+  <div *ngIf="filteredProducts.length>0">
     <div class="no-result" *ngIf="!showNavbar">
       <p class="no-result__text">Found {{ filteredProducts.length }} result</p>
     </div>
-  </div>
-
-  <div class="allPlatos">
-    <app-producto-card *ngFor="let product of filteredProducts" [productName]="product.name"
-      [productPill]="product.price" [imgProduct]="product.picture_url"[routerLink]="['/home/producto', product._id]">
-    </app-producto-card>
-
+    <div class="allPlatos">
+      <app-producto-card *ngFor="let product of filteredProducts" [productName]="product.name"
+        [productPill]="product.price" [imgProduct]="product.picture_url" [routerLink]="['/home/producto', product._id]">
+      </app-producto-card>
+    </div>
   </div>
 </div>

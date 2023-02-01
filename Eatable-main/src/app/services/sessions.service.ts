@@ -25,6 +25,10 @@ export class SessionsService {
     private http: HttpClient,
   ) { }
 
+  ruta(){
+    this.router.navigate(["/principal/home"])
+  }
+
   login(email: string, password: string) {
     this.http.post(`${this.apiUri}/login`, { email, password })
       .subscribe((data: any) => {
@@ -32,13 +36,15 @@ export class SessionsService {
           this._idUser = data.id
           sessionStorage.setItem("token", data.token);
           localStorage.setItem("iduser", this._idUser!)
-          this.router.navigate(["/principal/home"]);
+          this.router.navigate(["/loading"]);
+          setTimeout(() => { this.router.navigate(["/principal/home"]);}, 3000);
         }
       });
   }
 
   logOut(): void {
     sessionStorage.clear();
+    localStorage.clear();
     this.router.navigate(["/login"]);
   }
 
@@ -55,12 +61,6 @@ export class SessionsService {
         alert("Registro correcto");
         localStorage.setItem("credenciales", JSON.stringify(user))
         this.router.navigate(["/login"]);
-
-        // if (data.token) {
-        //   alert("Registro correcto");
-        //   sessionStorage.setItem("token", data.token);
-        //   this.router.navigate(["/login"]);
-        // }
       },
       (err) => {
         alert("Usuario existente");

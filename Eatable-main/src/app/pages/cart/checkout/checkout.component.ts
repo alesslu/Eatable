@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { items, ordersModel } from 'src/app/models/ordersModel';
@@ -9,16 +8,12 @@ import { OrderserviceService } from 'src/app/services/orderservice.service';
 import { SessionsService } from 'src/app/services/sessions.service';
 import { UserService } from 'src/app/services/user.service';
 
-=======
-import { Component } from '@angular/core';
->>>>>>> 945eb7379754c8fa87ea0770f4d15249ac9f8d31
 
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
   styleUrls: ['./checkout.component.css']
 })
-<<<<<<< HEAD
 
 export class CheckoutComponent implements OnInit {
   total!: number;
@@ -88,28 +83,3 @@ export class CheckoutComponent implements OnInit {
   }
 
 }
-=======
-export class CheckoutComponent {
-
-}
-
-// import { Component, OnInit } from '@angular/core';
-// import { CartService } from 'src/app/services/cart.service';
-
-// @Component({
-//   selector: 'app-checkout-view',
-//   templateUrl: './checkout-view.component.html',
-//   styleUrls: ['./checkout-view.component.css']
-// })
-// export class CheckoutViewComponent implements OnInit {
-//   total!: number
-
-//   constructor(
-//     private cartService: CartService
-//   ){}
-
-//   ngOnInit(){
-//     this.total = this.cartService.getTotal()
-//   }
-// }
->>>>>>> 945eb7379754c8fa87ea0770f4d15249ac9f8d31
